@@ -16,7 +16,7 @@ class AllTheBooks extends Component {
           <h3 className="my-4 font-monospace">Browse by genre</h3>
           <Row className="my-5 justify-content-center">
             <Col>
-              <Row className="gy-4">
+              <Row className="gx-0 gy-4">
                 <Col>
                   <Button className="singleCardButton" variant="success" onClick={() => this.setState({ collection: scifi })}>
                     Scifi

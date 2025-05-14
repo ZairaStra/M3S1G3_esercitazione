@@ -12,8 +12,8 @@ class BookList extends Component {
       <Container>
         <div className="mb-5">
           <h3 className="my-4 font-monospace text-center">Search by name</h3>
-          <Row xs={1} lg={2} className="justify-content-center gx-4 gy-4">
-            <Col>
+          <Row className="justify-content-center gx-4 gy-4">
+            <Col className="col-12 col-lg-8">
               <Form.Control
                 type="text"
                 placeholder="Search your next book!"
