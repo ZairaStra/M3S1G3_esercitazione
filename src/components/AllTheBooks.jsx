@@ -12,7 +12,7 @@ class AllTheBooks extends Component {
   render() {
     return (
       <Container>
-        <div className="text-center">
+        <div className="text-center mb-5">
           <h2 className="my-4 font-monospace">Browse by genre</h2>
           <div className="d-flex justify-content-evenly gap-2 my-3">
             <Button className="singleCardButton" variant="success" onClick={() => this.setState({ collection: scifi })}>

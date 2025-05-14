@@ -20,7 +20,7 @@ class SingleBook extends Component {
 
   render() {
     return (
-      <Card className={`singleCard ${this.state.isCardSelected ? " shadow p-3 bg-danger rounded" : ""} `} onClick={this.cardToggle}>
+      <Card className={`singleCard ${this.state.isCardSelected ? "bg-danger shadow px-3 rounded" : ""} `} onClick={this.cardToggle}>
         <Card.Img className="singleCardImg" variant="top" src={this.props.book.img} />
         <Card.Body className="text-center">
           <Card.Title className="singleCardTitle overflow-hidden">{this.props.book.title}</Card.Title>
