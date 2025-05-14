@@ -1,0 +1,43 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+body {
+  min-height: 90vh;
+}
+
+.singleCard {
+  height: 100%;
+}
+
+.singleCardImg {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+}
+
+.singleCardTitle {
+}
+
+.singleCardText {
+}
+
+.singleCardButton {
+  width: 7rem;
+  cursor: pointer;
+}
+
+.footer-container {
+  margin-top: 2rem;
+  min-height: 15vh;
+  background-color: rgb(162, 107, 107);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container ul {
+  font-size: large;
+  padding-left: 0;
+}
+
+.footer-container ul li {
+  list-style: none;
+  text-align: center;
+}
