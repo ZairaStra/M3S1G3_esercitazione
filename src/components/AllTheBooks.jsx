@@ -13,24 +13,38 @@ class AllTheBooks extends Component {
     return (
       <Container>
         <div className="text-center mb-5">
-          <h2 className="my-4 font-monospace">Browse by genre</h2>
-          <div className="d-flex justify-content-evenly gap-2 my-3">
-            <Button className="singleCardButton" variant="success" onClick={() => this.setState({ collection: scifi })}>
-              Scifi
-            </Button>
-            <Button className="singleCardButton" variant="warning text-white" onClick={() => this.setState({ collection: history })}>
-              History
-            </Button>
-            <Button className="singleCardButton" variant="danger" onClick={() => this.setState({ collection: romance })}>
-              Romance
-            </Button>
-            <Button className="singleCardButton" variant="primary" onClick={() => this.setState({ collection: fantasy })}>
-              Fantasy
-            </Button>
-            <Button className="singleCardButton" variant="dark text-white" onClick={() => this.setState({ collection: horror })}>
-              Horror
-            </Button>
-          </div>
+          <h3 className="my-4 font-monospace">Browse by genre</h3>
+          <Row className="my-5 justify-content-center">
+            <Col>
+              <Row className="gy-4">
+                <Col>
+                  <Button className="singleCardButton" variant="success" onClick={() => this.setState({ collection: scifi })}>
+                    Scifi
+                  </Button>
+                </Col>
+                <Col>
+                  <Button className="singleCardButton" variant="warning text-white" onClick={() => this.setState({ collection: history })}>
+                    History
+                  </Button>
+                </Col>
+                <Col>
+                  <Button className="singleCardButton" variant="danger" onClick={() => this.setState({ collection: romance })}>
+                    Romance
+                  </Button>
+                </Col>
+                <Col>
+                  <Button className="singleCardButton" variant="primary" onClick={() => this.setState({ collection: fantasy })}>
+                    Fantasy
+                  </Button>
+                </Col>
+                <Col>
+                  <Button className="singleCardButton" variant="dark text-white" onClick={() => this.setState({ collection: horror })}>
+                    Horror
+                  </Button>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
         </div>
         <Row xs={1} sm={2} md={3} lg={4} xxl={6} className="justify-content-center gy-4">
           {this.state.collection.map((book) => (
