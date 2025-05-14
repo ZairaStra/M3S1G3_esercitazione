@@ -42,34 +42,4 @@ class BookList extends Component {
   }
 }
 
-/* const BookList = function ({ books }) {
-  return (
-    <Container>
-      <div className="mb-5">
-        <h3 className="my-4 font-monospace text-center">Search by name</h3>
-        <Row xs={1} lg={2} className="justify-content-center gx-4 gy-4">
-          <Col>
-            <InputGroup className="mb-3">
-              <Form.Control type="text" placeholder="Search your next book!" aria-label="Search your book" aria-describedby="Search" />
-              <Button type="submit" className="singleCardButton bg-danger border-0">
-                Search
-              </Button>
-            </InputGroup>
-          </Col>
-        </Row>
-      </div>
-      <div className="mb-5">
-        <h3 className="my-4 font-monospace text-center">Section of the day</h3>
-        <Row xs={1} sm={2} md={3} lg={4} xxl={6} className="justify-content-center gy-4">
-          {books.map((book) => (
-            <Col key={book.asin}>
-              <SingleBook book={book} />
-            </Col>
-          ))}
-        </Row>
-      </div>
-    </Container>
-  );
-}; */
-
 export default BookList;
