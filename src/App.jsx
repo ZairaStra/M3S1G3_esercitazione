@@ -16,8 +16,9 @@ const App = function () {
     <>
       <MyNav />
       <Welcome />
-      <BookList books={fantasy} />
       <AllTheBooks />
+      <BookList books={fantasy} />
+
       <MyFooter />
     </>
   );

@@ -1,4 +1,3 @@
-import { Card } from "react-bootstrap";
 /*
 import fantasy from "../data/fantasy.json";
 import history from "../data/history.json";
@@ -8,7 +7,32 @@ import scifi from "../data/scifi.json";
 import { Component } from "react";
 */
 
-const SingleBook = function (props) {
+import { Component } from "react";
+import { Card } from "react-bootstrap";
+class SingleBook extends Component {
+  state = {
+    isCardSelected: false,
+  };
+
+  cardToggle = () => {
+    this.setState((prevState) => ({ isCardSelected: !prevState.isCardSelected }));
+  };
+
+  render() {
+    return (
+      <Card className={`singleCard ${this.state.isCardSelected ? " shadow p-3 bg-danger rounded" : ""} `} onClick={this.cardToggle}>
+        <Card.Img className="singleCardImg" variant="top" src={this.props.book.img} />
+        <Card.Body className="text-center">
+          <Card.Title className="singleCardTitle overflow-hidden">{this.props.book.title}</Card.Title>
+        </Card.Body>
+      </Card>
+    );
+  }
+}
+
+export default SingleBook;
+
+/* const SingleBook = function (props) {
   return (
     <Card className="singleCard">
       <Card.Img className="singleCardImg" variant="top" src={props.book.img} />
@@ -20,3 +44,4 @@ const SingleBook = function (props) {
 };
 
 export default SingleBook;
+ */
