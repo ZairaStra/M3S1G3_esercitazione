@@ -42,20 +42,20 @@ class BookList extends Component {
                     )}
                   </Button>
                 </Col>
-              </Row>
-              {this.state.showBooks && (
-                <Row xs={1} sm={2} md={3} lg={4} xxl={6} className="justify-content-center gy-4">
-                  {this.props.books
-                    .filter((book) => book.title.toLowerCase().includes(this.state.searchQuery.toLowerCase()))
-                    .map((book) => (
-                      <Col key={book.asin}>
-                        <SingleBook book={book} />
-                      </Col>
-                    ))}
-                </Row>
-              )}
+              </Row>{" "}
             </Col>
           </Row>
+          {this.state.showBooks && (
+            <Row xs={1} sm={2} md={3} lg={4} xxl={6} className="justify-content-center gy-4">
+              {this.props.books
+                .filter((book) => book.title.toLowerCase().includes(this.state.searchQuery.toLowerCase()))
+                .map((book) => (
+                  <Col key={book.asin}>
+                    <SingleBook book={book} />
+                  </Col>
+                ))}
+            </Row>
+          )}
         </div>
       </Container>
     );
