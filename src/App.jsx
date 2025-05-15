@@ -9,7 +9,11 @@ import MyFooter from "./components/MyFooter";
 import Welcome from "./components/Welcome";
 import AllTheBooks from "./components/AllTheBooks";
 import BookList from "./components/BookList";
+import scifi from "./data/scifi.json";
+import history from "./data/history.json";
+import romance from "./data/romance.json";
 import fantasy from "./data/fantasy.json";
+import horror from "./data/horror.json";
 
 const App = function () {
   return (
@@ -17,7 +21,11 @@ const App = function () {
       <MyNav />
       <Welcome />
       <AllTheBooks />
+      <BookList books={scifi} />
+      <BookList books={history} />
+      <BookList books={romance} />
       <BookList books={fantasy} />
+      <BookList books={horror} />
 
       <MyFooter />
     </>
