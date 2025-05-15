@@ -15,7 +15,7 @@ class AllTheBooks extends Component {
         <div className="text-center mb-5">
           <h3 className="my-4 font-monospace">Browse by genre</h3>
           <Row className="my-5 justify-content-center">
-            <Col>
+            <Col className="col-12 col-sm-10 col-md-8 col-xl-6">
               <Row className="gx-0 gy-4">
                 <Col>
                   <Button className="singleCardButton" variant="success" onClick={() => this.setState({ collection: scifi })}>
@@ -46,7 +46,7 @@ class AllTheBooks extends Component {
             </Col>
           </Row>
         </div>
-        <Row xs={1} sm={2} md={3} lg={4} xxl={6} className="justify-content-center gy-4">
+        <Row xs={1} sm={2} md={3} lg={4} xxl={6} className="justify-content-center gy-4 mb-5">
           {this.state.collection.map((book) => (
             <Col key={book.asin}>
               <Card className="singleCard">
