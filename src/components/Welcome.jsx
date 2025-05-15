@@ -6,7 +6,7 @@ const Welcome = function () {
       <Row className="my-5 justify-content-center">
         <Col className="col-12 col-md-10">
           <div className="d-flex justify-content-center align-items-baseline gap-3">
-            <h1 className="font-monospace display-1 mb-4">EpiBooks</h1>
+            <h1 className="font-monospace display-1 mb-4 text-danger-emphasis">EpiBooks</h1>
             <p className="font-monospace">Your Epic Bookstore!</p>
           </div>
           <Alert variant="danger" className="text-center">

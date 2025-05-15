@@ -12,8 +12,8 @@ class BookList extends Component {
     return (
       <Container>
         <div className="mb-5">
-          <h3 className="my-4 font-monospace text-center">
-            {this.props.books.length > 0 ? `Search by name in the category: ${this.props.books[0].category}` : "Search by name"}
+          <h3 className="my-4 font-monospace text-center text-danger-emphasis">
+            {this.props.books.length > 0 ? `Search by name in: ${this.props.books[0].category.toUpperCase()}` : "Search by name"}
           </h3>
           {/* <h3 className="my-4 font-monospace text-center">Search by name in the category: {this.props.books[0].category}</h3> */}
           <Row className="my-5 justify-content-center">

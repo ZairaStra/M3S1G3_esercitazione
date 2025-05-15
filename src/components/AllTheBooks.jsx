@@ -13,33 +13,33 @@ class AllTheBooks extends Component {
     return (
       <Container>
         <div className="text-center mb-5">
-          <h3 className="my-4 font-monospace">Browse by genre</h3>
+          <h3 className="my-4 font-monospace text-danger-emphasis">Browse by genre</h3>
           <Row className="my-5 justify-content-center">
-            <Col className="col-12 col-sm-10 col-md-8 col-xl-6">
+            <Col className="col-12 col-sm-10 col-lg-8">
               <Row className="gx-0 gy-4">
                 <Col>
                   <Button className="singleCardButton" variant="success" onClick={() => this.setState({ collection: scifi })}>
-                    Scifi
+                    SCIFI
                   </Button>
                 </Col>
                 <Col>
                   <Button className="singleCardButton" variant="warning text-white" onClick={() => this.setState({ collection: history })}>
-                    History
+                    HISTORY
                   </Button>
                 </Col>
                 <Col>
                   <Button className="singleCardButton" variant="danger" onClick={() => this.setState({ collection: romance })}>
-                    Romance
+                    ROMANCE
                   </Button>
                 </Col>
                 <Col>
                   <Button className="singleCardButton" variant="primary" onClick={() => this.setState({ collection: fantasy })}>
-                    Fantasy
+                    FANTASY
                   </Button>
                 </Col>
                 <Col>
                   <Button className="singleCardButton" variant="dark text-white" onClick={() => this.setState({ collection: horror })}>
-                    Horror
+                    HORROR
                   </Button>
                 </Col>
               </Row>
@@ -52,8 +52,8 @@ class AllTheBooks extends Component {
               <Card className="singleCard">
                 <Card.Img className="singleCardImg" variant="top" src={book.img} />
                 <Card.Body className="text-center">
-                  <Card.Title className="singleCardTitle text-truncate">{book.title}</Card.Title>
-                  <Card.Text className="singleCardText text-capitalize">{book.category}</Card.Text>
+                  <Card.Title className="singleCardTitle text-truncate text-danger-emphasis">{book.title}</Card.Title>
+                  <Card.Text className="singleCardText text-capitalize text-danger-emphasis">{book.category}</Card.Text>
                   <Button className="singleCardButton" variant="danger">
                     <i className="bi bi-basket"></i> <span>{book.price} €</span>
                   </Button>
