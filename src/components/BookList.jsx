@@ -15,18 +15,18 @@ class BookList extends Component {
           <h3 className="my-4 font-monospace text-center">Search by name in the category: {this.props.books[0].category}</h3>
 
           <Row className="justify-content-center gx-4 gy-4 mb-5">
-            <Col className="col-10">
+            <Col className="col-12 col-md-8 col-lg-9">
               <Form.Control
                 type="text"
                 placeholder="Search your next book!"
                 value={this.state.searchQuery}
-                onChange={(e) => this.setState({ searchQuery: e.target.value })}
+                onChange={(e) => this.setState({ searchQuery: e.target.value, showBooks: e.target.value.length > 0 })}
                 aria-label="Search your book"
                 aria-describedby="Search"
               />
             </Col>
-            <Col className="col-2 d-flex justify-content-end">
-              <Button className="singleButton" variant="danger" onClick={() => this.setState({ showBooks: !this.state.showBooks })}>
+            <Col className="col-5 col-md-4 col-lg-3 d-flex justify-content-end">
+              <Button className="singleButton align-items-baseline" variant="danger" onClick={() => this.setState({ showBooks: !this.state.showBooks })}>
                 {this.state.showBooks ? (
                   <>
                     Nascondi sezione <i class="bi bi-chevron-up"> </i>
